@@ -1,0 +1,90 @@
+QPushButton:hover {
+    background-color: #003feb;
+}
+
+QPushButton {
+    border-radius: 10px;
+    background-color: #235AF0;
+    color: white;
+}
+
+QPushButton:pressed {
+    background-color: #052a90;
+}
+
+QLineEdit {
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+}
+
+QLineEdit::placeholder {
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+QTabWidget::pane {
+    border-top: 2px solid #C2C7CB;
+}
+
+QTabWidget::tab-bar {
+    left: 5px;
+}
+
+QTabBar::tab {
+    border: 2px solid #C4C4C3;
+    border-bottom-color: #C2C7CB;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+QTextEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+QScrollBar {
+    background: white;
+    border: 1px solid #5C7AEA;
+    border-radius: 5px;
+}
+
+QScrollBar:horizontal {
+    height: 13px;
+}
+
+QScrollBar:vertical {
+    width: 8px;
+}
+
+QScrollBar::handle {
+    background: #235AF0;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    height: 25px;
+    min-width: 8px;
+}
+
+QScrollBar::handle:vertical {
+    width: 25px;
+    min-height: 8px;
+}
+
+QScrollBar::add-line {
+    border: none;
+    background: none;
+}
+
+QScrollBar::sub-line {
+    border: none;
+    background: none;
+}

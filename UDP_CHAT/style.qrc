@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>bubblesmiley_102154.ico</file>
+        <file>send_121758(1).ico</file>
+        <file>style.css</file>
+        <file>styleeSmile.css</file>
+    </qresource>
+</RCC>

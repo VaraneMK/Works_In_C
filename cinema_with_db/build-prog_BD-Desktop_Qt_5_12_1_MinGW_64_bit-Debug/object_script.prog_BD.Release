@@ -1,0 +1,13 @@
+release/main.o
+release/mainwindow.o
+release/user.o
+release/actionwithmovie.o
+release/actionwithsession.o
+release/actionwithgenre.o
+release/database.o
+release/dialogforreview.o
+release/moc_mainwindow.o
+release/moc_actionwithmovie.o
+release/moc_actionwithsession.o
+release/moc_actionwithgenre.o
+release/moc_dialogforreview.o

@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1578</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1581</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tab_login">
+     <attribute name="title">
+      <string>Авторизация</string>
+     </attribute>
+     <widget class="QRadioButton" name="radioButton_user">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>180</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Пользователь</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_admin">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>180</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Администратор</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_performer">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>180</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Исполнитель</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_login">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>220</y>
+        <width>241</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите логин*</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_login">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>220</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Логин</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_password">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>250</y>
+        <width>241</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите пароль*</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_password">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>250</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Пароль</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_enter">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>280</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Войти</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_toReg">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>320</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Регистрация</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_reg">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>130</y>
+        <width>561</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>481</width>
+         <height>239</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_reg">
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Регистрация</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_regLogin">
+          <property name="placeholderText">
+           <string>Введите логин*</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_regPassword">
+          <property name="placeholderText">
+           <string>Введите пароль*</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_regNameGroup">
+          <property name="placeholderText">
+           <string>Введите название группы*</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_genre">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="currentText">
+           <string>Выберите жанр</string>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>Выберите жанр</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_participants">
+          <property name="placeholderText">
+           <string>Введите участников группы</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_reg">
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string>Зарегистрироваться</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_back">
+          <property name="text">
+           <string>Назад</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_search">
+     <attribute name="title">
+      <string>Поиск</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>1301</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_top">
+           <property name="text">
+            <string>Топ музыки</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>8</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget_top">
+           <property name="rowCount">
+            <number>0</number>
+           </property>
+           <property name="columnCount">
+            <number>6</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Название</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Исполнитель</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Альбом</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Длительность</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Жанр</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Добавить</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_search">
+             <property name="text">
+              <string>Поиск</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_search">
+             <property name="placeholderText">
+              <string>Введите название трека или имя исполнителя</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_search">
+             <property name="text">
+              <string>Найти</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget_results">
+           <property name="rowCount">
+            <number>0</number>
+           </property>
+           <property name="columnCount">
+            <number>6</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Название</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Исполнитель</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Альбом</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Длительность</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Жанр</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Добавить</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_music">
+     <attribute name="title">
+      <string>Моя музыка</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>40</y>
+        <width>1111</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Музыка</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget_myMusic">
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="rowCount">
+          <number>0</number>
+         </property>
+         <property name="columnCount">
+          <number>7</number>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>147</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>48</number>
+         </attribute>
+         <attribute name="verticalHeaderMinimumSectionSize">
+          <number>33</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Название</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Исполнитель</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Альбом</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Длительность</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Жанр</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Взаимодействие</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_playlists">
+     <attribute name="title">
+      <string>Мои плейлисты</string>
+     </attribute>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>350</y>
+        <width>341</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>321</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_createName_3">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Изменение названия плейлиста</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_changePlaylist">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Введите новое название</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_changePlaylist">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Изменить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_closeFrame">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Закрыть</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>1481</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Ваши плейлисты</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget_playlists">
+           <property name="rowCount">
+            <number>0</number>
+           </property>
+           <property name="columnCount">
+            <number>6</number>
+           </property>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>Название</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Кол-во песен</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Длительность</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Открыть</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Изменить</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QLabel" name="label_playlistInfo">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Плейлист</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget_TracksFromPlaylist">
+           <property name="rowCount">
+            <number>0</number>
+           </property>
+           <property name="columnCount">
+            <number>6</number>
+           </property>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>Название</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Исполнитель</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Альбом</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Длительность </string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Жанр</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>350</y>
+        <width>341</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>321</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_createName_2">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Создание плейлиста</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_newPlaylist_2">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Введите название</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_createPlaylist_2">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Создать</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <zorder>horizontalLayoutWidget_3</zorder>
+     <zorder>frame_2</zorder>
+     <zorder>frame</zorder>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Страница исполнителя</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>421</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Отправить альбом на проверку</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>401</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_addAlbum">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Введите название альбома</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Введите год создания альбом</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::PlusMinus</enum>
+          </property>
+          <property name="maximumDate">
+           <date>
+            <year>2022</year>
+            <month>12</month>
+            <day>31</day>
+           </date>
+          </property>
+          <property name="minimumDate">
+           <date>
+            <year>1900</year>
+            <month>9</month>
+            <day>14</day>
+           </date>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy</string>
+          </property>
+          <property name="date">
+           <date>
+            <year>2022</year>
+            <month>1</month>
+            <day>1</day>
+           </date>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_genres">
+          <property name="editable">
+           <bool>false</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>Выберите жанр</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Выберите количество треков</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_count">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::PlusMinus</enum>
+            </property>
+            <property name="minimum">
+             <number>2</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="rowCount">
+           <number>2</number>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <row/>
+          <row/>
+          <column>
+           <property name="text">
+            <string>Название трека</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Продолжительность (в минутах)</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_sendToCheck">
+          <property name="text">
+           <string>Отправить на проверку</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QComboBox" name="comboBox_albums">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>531</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Ваши альбомы</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>10</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Открыть</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_album">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>40</y>
+        <width>531</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Название</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Исполнитель</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Альбом</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Длительность</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Жанр</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Страница админа</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>20</y>
+        <width>691</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Заявки на проверку</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>611</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QComboBox" name="comboBox_check">
+            <item>
+             <property name="text">
+              <string>Альбомы под проверку</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_open">
+            <property name="text">
+             <string>Открыть</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_check">
+          <property name="rowCount">
+           <number>0</number>
+          </property>
+          <property name="columnCount">
+           <number>5</number>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Название</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Исполнитель</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Альбом</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Длительность</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Жанр</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="pushButton_agree">
+            <property name="text">
+             <string>Добавить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_reject">
+            <property name="text">
+             <string>Отклонить</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1578</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

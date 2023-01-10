@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>bubblesmiley_102154.ico</file>
+        <file>send_121758(1).ico</file>
+        <file>style.css</file>
+        <file>styleeSmile.css</file>
+        <file>style_dark.css</file>
+        <file>styleSmile_dark.css</file>
+        <file>night-shift-1_110443.ico</file>
+        <file>file.ico</file>
+        <file>styleFile.css</file>
+        <file>styleFile_dark.css</file>
+    </qresource>
+</RCC>

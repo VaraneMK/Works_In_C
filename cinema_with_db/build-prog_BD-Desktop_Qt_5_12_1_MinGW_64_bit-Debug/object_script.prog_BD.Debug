@@ -1,0 +1,13 @@
+debug/main.o
+debug/mainwindow.o
+debug/user.o
+debug/actionwithmovie.o
+debug/actionwithsession.o
+debug/actionwithgenre.o
+debug/database.o
+debug/dialogforreview.o
+debug/moc_mainwindow.o
+debug/moc_actionwithmovie.o
+debug/moc_actionwithsession.o
+debug/moc_actionwithgenre.o
+debug/moc_dialogforreview.o
